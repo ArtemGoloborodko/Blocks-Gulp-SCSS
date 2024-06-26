@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.min.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container container_padding">
+      <nav class="nav">
+        <ul>
+          <li class="nav__item"><a href="#">Text</a></li>
+          <li class="nav__item"><a href="#">Text</a></li>
+          <li class="nav__item"><a href="#">Text</a></li>
+        </ul>
+        <button class="menu-icon" id="openMenuBtn"><svg class="svg_one" width="44" height="27" viewBox="0 0 44 27" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <line y1="1.5" x2="43.3738" y2="1.5" stroke="white" stroke-width="3" />
+            <line y1="13.5" x2="43.3738" y2="13.5" stroke="white" stroke-width="3" />
+            <line y1="25.5" x2="43.3738" y2="25.5" stroke="white" stroke-width="3" />
+          </svg>
+
+          <svg class="svg_two" width="46" height="27" viewBox="0 0 46 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.29248 1.38367L44.3021 25.688" stroke="white" stroke-width="3" />
+            <path d="M1.0764 25.5665L44.299 1.50208" stroke="white" stroke-width="3" />
+          </svg>
+        </button>
+
+      </nav>
+    </div>
+
+
+    <div id="menu" class="menu">
+      <ul>
+          <li><a href="#">ТЕКСТ 1</a></li>
+          <li><a href="#">ТЕКСТ 2</a></li>
+          <li><a href="#">ТЕКСТ 3</a></li>
+          <li><a href="#">ТЕКСТ 4</a></li>
+          <li><a href="#">ТЕКСТ 5</a></li>
+      </ul>
+      <a class="popup-btn popup-btn__shadow open_modal">Open pop-up button</a>
+  </div>
+
+
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container container_padding ">
+        <button class="nav-arrow left-arrow"><svg width="40" height="77" viewBox="0 0 40 77" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M39.0264 75.5961L1.7475 38.3171L39.0264 1.03821" stroke="white" stroke-width="2" />
+          </svg></button>
+        <div class="hero__wrapper">
+          <h1>H1 text</h1>
+          <a class="popup-btn popup-btn__shadow open_modal">Open pop-up button</a>
+        </div>
+        <button class="nav-arrow right-arrow"><svg width="40" height="77" viewBox="0 0 40 77" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.898804 1.03821L38.1777 38.3172L0.898804 75.5961" stroke="white" stroke-width="2" />
+          </svg></button>
+      </div>
+    </section>
+
+    <section class="content">
+      <div class="container">
+        <h2>H2 text</h2>
+        <div class="grid">
+          <div class="grid-item item-0">1</div>
+          <div class="grid-item item-1">2</div>
+          <div class="grid-item item-2">3</div>
+          <div class="grid-item item-3">4</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="block__down">
+          <h2>H2 text</h2>
+          <ul class="carousel">
+            <li class="carousel-item"></li>
+            <li class="carousel-item"></li>
+            <li class="carousel-item"></li>
+            <li class="carousel-item"></li>
+            <li class="carousel-item"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <p>Text up</p>
+        <button class="popup-btn open_modal">Open pop-up button</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <ul class="footer__list">
+          <li><p>Text</p></li>
+          <li><p>Text</p></li>
+          <li><p>Text</p></li>
+          <li><p>Text</p></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeModalBtn">X</span>
+        <p>Pop-up</p>
+    </div>
+</div>
+</body>
+
+</html>

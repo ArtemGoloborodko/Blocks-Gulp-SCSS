@@ -1,0 +1,28 @@
+@import "varilables";
+@import "font_face";
+
+
+@mixin list-reset() {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin btn-reset() {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin container() {
+  position: relative;
+  width: 100%;
+  max-width: $containerMaxWidth;
+  margin: 0 auto;
+  background-image: none;
+}

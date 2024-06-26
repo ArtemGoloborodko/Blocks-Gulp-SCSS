@@ -1,0 +1,110 @@
+// подключаем стили
+/* @import "fonts"; */
+@import "normalize";
+@import "style";
+@import "mixins";
+@import "varilables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*  */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  /* color: inherit; */
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+.a-outline:focus {
+  outline: 1px solid #CC9933;
+  outline-offset: 5px;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $secondary-color;
+}
+
+header,
+footer,
+main {
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+
+    li {
+      display: inline;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+button {
+  outline: none;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+
+.container {
+  @include container();
+}
+
+.container_padding {
+  padding: $containerPadding;
+}
+
+@media (max-width: 620px) {
+  .container {
+    padding: 0 15px;
+  }
+
+}
